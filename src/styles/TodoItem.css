@@ -1,0 +1,38 @@
+.todo-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: currentColor 2px solid;
+  padding: 0.25rem 0.5rem;
+  gap: 1rem;
+}
+.todo-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (prefers-color-scheme: dark) {
+  .todo-input {
+    --body-bg-clr: 0, 0%, 20%;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .todo-input {
+    --body-bg-clr: 200 70% 85%;
+  }
+}
+.todo-input {
+  width: 50%;
+  padding: 0.25rem 0.5rem;
+  font: inherit;
+  background-color: hsl(var(--body-bg-clr));
+  border: 2px dashed currentColor;
+  outline: none;
+}
+
+span.completed {
+  text-decoration: line-through;
+  font-weight: bold;
+  color: var(--accent-clr, darkgreen);
+}

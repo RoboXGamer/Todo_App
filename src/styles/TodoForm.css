@@ -1,0 +1,17 @@
+.form-container {
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+
+  form {
+    width: 50%;
+  }
+
+  input {
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+    border-color: var(--text-clr);
+  }
+}
